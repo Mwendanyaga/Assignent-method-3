@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Triangle {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the base and height of a triangle:");
+        System.out.print("Base: ");
+        double base = scanner.nextDouble();
+        System.out.print("Height: ");
+        double height = scanner.nextDouble();
+
+        double area = calculateArea(base, height);
+        displayArea(area);
+    }
+
+    public static double calculateArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+
+    public static void displayArea(double area) {
+        System.out.println("The area of the triangle is: " + area);
+    }
+}
+
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter a year:");
+    int year = scanner.nextInt();
+
+    if (isLeapYear(year)) {
+        System.out.println(year + " is a leap year.");
+    } else {
+        System.out.println(year + " is not a leap year.");
+    }
+}
